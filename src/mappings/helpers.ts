@@ -82,8 +82,8 @@ export function fetchTokenSymbol(tokenAddress: Address): string {
 
 export function fetchTokenName(tokenAddress: Address): string {
   // hard coded override
-  if (tokenAddress.toHexString() == '0xe0b7927c4af23765cb51314a0e0521a9645f0e2a') {
-    return 'DGD'
+  if (tokenAddress.toHexString() == '0x21E19121e1360e09AA1F810280c97A87b85d1069') {
+    return 'GFIN'
   }
 
   let contract = ERC20.bind(tokenAddress)
