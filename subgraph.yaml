@@ -1,4 +1,5 @@
 specVersion: 0.0.2
+description: Griffin is a decentralized protocol for automated token exchange on Ethereum.
 repository: https://github.com/Griffin-Exchange/griffin-subgraph
 schema:
   file: ./schema.graphql
