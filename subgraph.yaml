@@ -5,15 +5,15 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: Factory
-    network: mainnet
+    name: Honey
+    network: xdai
     source:
-      address: '0x0a6E81367005676dD3E46cC4a04d0b22376FE7c4'
+      address: '0x03EaB41Ce83f1ad532280Ac459be32341d75eb66'
       abi: Factory
-      startBlock: 11016088
+      startBlock: 13154190
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.3
       language: wasm/assemblyscript
       file: ./src/mappings/factory.ts
       entities:
@@ -34,7 +34,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pair
-    network: mainnet
+    network: xdai
     source:
       abi: Pair
     mapping:
